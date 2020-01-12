@@ -1,9 +1,5 @@
-var clc = require('cli-color');
+var funcoes = require("./funcoes.js");
 
-console.log(clc.green("Mensagem verde:"));
-console.log(clc.red.bgWhite.underline("Underlined red text on white background."));
-console.log(clc.red.bold("Error"));
-console.log(clc.yellow("Warning"));
-console.log(clc.blue("Sucess"));
+var resultado = funcoes.validarUsuario("joel", "123");
 
-// https://www.npmjs.com/package/cli-color
+console.log(resultado);
