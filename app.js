@@ -1,7 +1,9 @@
-var nome = "Yasmin";
+var clc = require('cli-color');
 
-function exibirMensagem(nome) {
-    console.log("Olá", nome);
-}
+console.log(clc.green("Mensagem verde:"));
+console.log(clc.red.bgWhite.underline("Underlined red text on white background."));
+console.log(clc.red.bold("Error"));
+console.log(clc.yellow("Warning"));
+console.log(clc.blue("Sucess"));
 
-exibirMensagem(nome);
+// https://www.npmjs.com/package/cli-color
